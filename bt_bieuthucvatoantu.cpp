@@ -140,9 +140,14 @@ int main() {
 		cout << setprecision(8) << fixed << b;
 		}
 	/****bai12**** {
-		int a, b, c, d;
-		cin >> a>> b>> c>> d;
-		cout << "can bac 2 cua so nguyen tao boi 4 chu so la " << sqrt(a * 1000 + b * 100 + c * 10 + d);
+		 const int n = 4;
+    		int a = 0;
+    		for (int i = 0; i < n; i++) {
+        		int d; cin >> d;
+       			a = a * 10 + d;
+        		(a << 1) + (a << 3);
+    	}
+		cout << "can bac 2 cua so nguyen tao boi 4 chu so la " << sqrt(a);
 	}
 	/****bai13****{
 		int m; cin >> m;
